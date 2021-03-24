@@ -1,4 +1,10 @@
-﻿namespace BuracoNasLetras.Api.Extensios
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BuracoNasLetras.ConsoleApp.Extensions
 {
     public class QuantidadeBuracosTexto
     {
@@ -34,6 +40,7 @@
                     letras[i].Equals('b') ||
                     letras[i].Equals('d') ||
                     letras[i].Equals('e') ||
+                    // A letra 'g' pode ser escrita por diversas fontes (assim como as outras), porém estou considerando a fonte cuja formatação da letra possuí apenas um buraco
                     letras[i].Equals('g') ||
                     letras[i].Equals('o') ||
                     letras[i].Equals('p') ||

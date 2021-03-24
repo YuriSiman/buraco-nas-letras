@@ -1,12 +1,9 @@
 ﻿using AutoMapper;
-using BuracoNasLetras.Api.Extensios;
 using BuracoNasLetras.Api.ViewModels;
 using BuracoNasLetras.Business.Interfaces;
 using BuracoNasLetras.Business.Models;
+using BuracoNasLetras.ConsoleApp.Extensions;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace BuracoNasLetras.Api.Controllers

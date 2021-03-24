@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\console\BuracoNasLetras.ConsoleApp\BuracoNasLetras.ConsoleApp.csproj" />
     <ProjectReference Include="..\BuracoNasLetras.Data\BuracoNasLetras.Data.csproj" />
   </ItemGroup>
 
