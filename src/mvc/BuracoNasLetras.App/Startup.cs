@@ -61,7 +61,7 @@ namespace BuracoNasLetras.App
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Papeis}/{action=Index}/{id?}");
             });
         }
     }
