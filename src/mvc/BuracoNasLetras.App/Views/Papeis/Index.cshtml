@@ -1,0 +1,51 @@
+﻿@model IEnumerable<BuracoNasLetras.App.ViewModels.PapelViewModel>
+
+@{
+    ViewData["Title"] = "Informações dos Textos Inseridos";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr />
+<p>
+    <a class="btn btn-info" asp-action="Create">Inserir Novo Texto</a>
+</p>
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Texto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tamanho)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalDePalavras)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalDeBuracos)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Texto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tamanho)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalDePalavras)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalDeBuracos)
+            </td>
+            <td>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
