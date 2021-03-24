@@ -2,6 +2,7 @@
 using BuracoNasLetras.Business.Models;
 using BuracoNasLetras.Data.Context;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace BuracoNasLetras.Data.Repository
@@ -15,6 +16,11 @@ namespace BuracoNasLetras.Data.Repository
         {
             _dbContext = dbContext;
             _dbSet = dbContext.Set<Papel>();
+        }
+
+        public async Task<List<Papel>> ObterTodos()
+        {
+            return await _dbSet.ToListAsync();
         }
 
         public async Task Adicionar(Papel papel)
