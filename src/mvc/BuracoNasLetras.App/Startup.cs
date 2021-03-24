@@ -1,4 +1,6 @@
+using BuracoNasLetras.Business.Interfaces;
 using BuracoNasLetras.Data.Context;
+using BuracoNasLetras.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,9 +29,12 @@ namespace BuracoNasLetras.App
             services.AddDbContext<MeuDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddAutoMapper(typeof(Startup));
+
             services.AddControllersWithViews();
 
             services.AddScoped<MeuDbContext>();
+            services.AddScoped<IPapelRepository, PapelRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
