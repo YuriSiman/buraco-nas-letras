@@ -1,3 +1,4 @@
+using BuracoNasLetras.App.Extensios;
 using BuracoNasLetras.Business.Interfaces;
 using BuracoNasLetras.Data.Context;
 using BuracoNasLetras.Data.Repository;
@@ -33,6 +34,7 @@ namespace BuracoNasLetras.App
 
             services.AddControllersWithViews();
 
+            services.AddScoped<QuantidadeBuracosTexto>();
             services.AddScoped<MeuDbContext>();
             services.AddScoped<IPapelRepository, PapelRepository>();
         }

@@ -31,7 +31,7 @@ namespace BuracoNasLetras.ConsoleApp
 
             for (int i = 0; i < letras.Length; i++)
             {
-                if (letras[i].Equals('B') || letras[i].Equals('g') || letras[i].Equals('8'))
+                if (letras[i].Equals('B') || letras[i].Equals('8'))
                 {
                     buracos += 2;
                 }
@@ -45,6 +45,7 @@ namespace BuracoNasLetras.ConsoleApp
                     letras[i].Equals('b') ||
                     letras[i].Equals('d') ||
                     letras[i].Equals('e') ||
+                    letras[i].Equals('g') ||
                     letras[i].Equals('o') ||
                     letras[i].Equals('p') ||
                     letras[i].Equals('q') ||
