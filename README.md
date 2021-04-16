@@ -1,10 +1,10 @@
 <h1 align="center">Buraco nas Letras</h1>
 
-<p align="center">Projeto Buraco nas Letras implementado para teste da HMB Tecnologia.</p>
+<p align="center">Teste Buraco nas Letras implementado com Aplicação Console, Web e API</p>
 
 ---
 
-### :dart: Objetivo
+### :dart: Meu Objetivo com o Teste
 
 Eu decidi fazer um projeto distribuído entre camadas, sendo que a Web Api e o Web App utilizam as validações para o número de buracos no texto que constam na Console Application, com isso, elas possuem uma referência direta com a aplicação em console.
 
