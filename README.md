@@ -31,7 +31,8 @@
 
 ## :clipboard: Sobre o Projeto
 
-Este projeto se trata de um desafio para praticar a construção de projetos em Console Application, Web API e Web MVC com o dotnet e c#. Ele está distribuído entre camadas, sendo que a Web Api e o Web Mvc utilizam as mesmas validações que constam na camada Console Application.
+Este projeto se trata de um desafio a ser resolvido em Console Application, Web API e Web MVC utilizando dotnet e c#. Os dados foram persistidos num banco utilizando o Entity Framework Core e a API foi documentada com Swagger. Resolva o desafio utilizando os recursos que julgar necessário para o desenvolvimento. Boa sorte! :computer::coffee:
+
 
 O projeto consiste em aplicações desenvolvidas em .NET 5.0:
 
